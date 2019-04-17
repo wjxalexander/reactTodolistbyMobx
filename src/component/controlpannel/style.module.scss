@@ -1,0 +1,22 @@
+%message-shared {
+  display: inline-block;
+  padding: 3px 7px;
+}
+.container {
+    color: #777;
+    margin: 20px 0;
+  a {
+    text-decoration: none;
+    outline: none;
+    color: #777;
+    @extend %message-shared;
+    border: 1px solid transparent;
+    border-radius: 2px;
+  }
+  .selected{
+    border-color:rgba(175, 47, 47, 0.2);
+  }
+  span {
+    @extend %message-shared;
+  }
+}
